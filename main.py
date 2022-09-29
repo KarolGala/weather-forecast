@@ -5,10 +5,10 @@ import json
 
 
 
-class WeatherSlupsk:
+class Weather:
     def __init__(self): 
-        API_key = "### YOUR_API_KEY ### get it for free from -> https://home.openweathermap.org"
-        #Coordinates of your city
+        API_key = "### YOUR_API_KEY ### get it from -> https://home.openweathermap.org"
+        #Coordinates of your city, in this case it's Słupsk
         lat = "54.46"
         lon = "17.03"
         self.url = f"http://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&lang=pl&appid={API_key}"
@@ -36,7 +36,7 @@ class WeatherSlupsk:
 
 
 def main():
-    WeatherSlupsk().conclusion()
+    Weather().conclusion()
 
 
 
